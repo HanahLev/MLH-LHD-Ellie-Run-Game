@@ -1,0 +1,95 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.game{
+	background-image: url("black-and-white-city-skyline-clipart-5.JPG");
+			animation: pan 2s linear infinite;
+	margin: auto;
+	margin-top: 25px;
+	width: 800px;
+	height: 300px;
+	border: 10px solid blue;
+	overflow: hidden;
+}
+
+@keyframes pan {
+   100%{
+    background-position:-839px 0px;
+  }
+}
+
+#ellie{
+	height: 180px;
+	position: relative;
+	top: 120.5px;
+}
+
+.animate{
+	animation: jump 300ms;
+}
+
+@keyframes jump{
+	0%{top: 100.5px;}
+	30%{top: 50px;}
+	50%{top: 25px;}
+	80%{top: 50px;}
+	100%{top: 100.5px;}
+}
+
+#obstacle{
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	position: relative;
+	top: 120px;
+	left: 780.5px;
+	animation: obstacle 1s infinite linear;
+}
+
+@keyframes obstacle{
+	0%{left: 780.5px;}
+	100%{left: -500px;}
+}
+
+.container {
+	width: 500px;
+	height: 320px;
+	color: yellow;
+	text-align: center;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.resetbutton {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  border-color: blue;
+  border-width: 5px;
+  background-color: yellow;
+  box-shadow: 0 5px grey;
+}
+
+.button:hover {
+	background-color: red;
+	color: yellow;
+
+}
+
+.button:active {
+  background-color: blue;
+  color: yellow;
+  border-color: red;
+  box-shadow: none;
+  transform: translateY(5px);
+}
